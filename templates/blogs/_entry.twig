@@ -1,0 +1,19 @@
+{% extends "_layout" %}
+
+{% block content %}
+   <h1 class="text-4xl text-black font-display my-4">{{ entry.title }}</h1>
+   <img src="{{entry.featureImage.one().getUrl("medium")}}" alt="">
+
+   {% include "_includes/post-blocks" with { blocks: entry.postContent.all() } only %}
+
+    {# display post categories #}
+  {% if entry.postCategories|length %}
+  <div class="border-t py-2 mb-6">
+    {% for category in entry.postCategories.all() %}
+      <a href="{{ category.url }}" class="inline-block border rounded px-2 py-1 text-sm">
+        {{- category.title -}}
+      </a>
+    {% endfor %}
+  </div>
+  {% endif %}
+{% endblock %}

@@ -1,0 +1,40 @@
+fieldLayouts:
+  843d848a-9f21-4a80-9388-e460ab5faa91:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: blogCategories
+name: 'Blog Categories'
+siteSettings:
+  9e1f1e8b-ff1c-4882-bd65-33e2f381b908: # Blog Tutorial
+    hasUrls: true
+    template: blogs/_category
+    uriFormat: 'blogs/category/{slug}'
+structure:
+  maxLevels: 1
+  uid: 574fc2f1-22ac-41ef-9ecc-8cfb14014aaf
